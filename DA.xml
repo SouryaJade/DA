@@ -1,17 +1,3 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_setmotors" id="183" inline="true" x="313" y="126">
-    <value name="BOTHMOVLEFT">
-      <block type="sensor_spectrometer" id="173">
-        <field name="LIGHT">BLUE</field>
-      </block>
-    </value>
-    <value name="BOTHMOVRIGHT">
-      <block type="sensor_spectrometer" id="205">
-        <field name="LIGHT">BLUE</field>
-      </block>
-    </value>
-    <next>
-      <block type="movement_forward" id="165"></block>
-    </next>
-  </block>
+  <block type="movement_reverse" id="300" x="91" y="49"></block>
 </xml>
