@@ -1,37 +1,17 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_reverse" id="290" x="435" y="102"></block>
-  <block type="controls_repeat" id="273" inline="true" x="638" y="365">
-    <value name="TIMES">
-      <block type="math_number" id="280">
-        <field name="NUM">2</field>
+  <block type="movement_setmotors" id="183" inline="true" x="313" y="126">
+    <value name="BOTHMOVLEFT">
+      <block type="sensor_spectrometer" id="173">
+        <field name="LIGHT">BLUE</field>
       </block>
     </value>
-    <statement name="DO">
-      <block type="movement_setmotors" id="183" inline="true">
-        <value name="BOTHMOVLEFT">
-          <block type="sensor_spectrometer" id="173">
-            <field name="LIGHT">BLUE</field>
-          </block>
-        </value>
-        <value name="BOTHMOVRIGHT">
-          <block type="sensor_spectrometer" id="205">
-            <field name="LIGHT">BLUE</field>
-          </block>
-        </value>
-        <next>
-          <block type="movement_forward" id="165">
-            <next>
-              <block type="robot_delay" id="214" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="221">
-                    <field name="NUM">5000</field>
-                  </block>
-                </value>
-              </block>
-            </next>
-          </block>
-        </next>
+    <value name="BOTHMOVRIGHT">
+      <block type="sensor_spectrometer" id="205">
+        <field name="LIGHT">BLUE</field>
       </block>
-    </statement>
+    </value>
+    <next>
+      <block type="movement_forward" id="165"></block>
+    </next>
   </block>
 </xml>
